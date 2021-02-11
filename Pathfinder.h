@@ -5,6 +5,7 @@
 #include <sstream>
 #include <fstream>
 #include <time.h>
+#include <algorithm>
 #include "PathfinderInterface.h"
 using namespace std;
 
@@ -29,7 +30,7 @@ public:
 	vector<string> solveMaze();
 	
 protected:
-  bool find_maze_path(int grid[ROW_SIZE][COL_SIZE][FLOOR_SIZE], int col, int row, int floor);
-  vector<string> solution;
+  	bool find_maze_path(int grid[ROW_SIZE][COL_SIZE][FLOOR_SIZE], int row, int col, int	floor);
+	vector<string> solution;
 	int maze_grid[ROW_SIZE][COL_SIZE][FLOOR_SIZE]; // Holds values
 };

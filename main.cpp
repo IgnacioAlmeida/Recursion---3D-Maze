@@ -34,8 +34,8 @@ int main() {
 	ofstream ofs; // create the output stream to write to an output file
 	string temp; // used to store the current instruction
 	Pathfinder* pathptr = NULL;//the Pathfinder
-
-	for (int i = 0; i < NUM_FILES; i++) {
+	
+	for (int i = 0; i <NUM_FILES; i++) {
 		ifs.open(fileArray[i]); // open the file to read from
 		ofs.open("out_" + fileArray[i]); // open the file to write to
 		pathptr = new Pathfinder();
